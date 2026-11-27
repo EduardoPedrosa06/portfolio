@@ -34,13 +34,17 @@ const certificados = [
 ];
 
 // ----- PROJETOS -----
+// A ordem da lista é a ordem da hélice (o primeiro vira o 01).
+// imagem: nome do arquivo dentro de assets/projetos/ (logo, print ou design)
+//         deixe '' (vazio) se o projeto ainda não tiver imagem
 const projetos = [
   {
     nome: 'SentinelaLog',
     descricao: 'Descrição do SentinelaLog: o que ele faz, qual problema resolve e o que você aprendeu construindo.',
+    imagem: 'sentinelalog.png',
     link: 'https://github.com/EduardoPedrosa06'
   },
-  { nome: 'Projeto Dois',   descricao: 'Descrição do projeto dois.',   link: 'https://github.com/EduardoPedrosa06' },
+  { nome: 'Projeto Dois',   descricao: 'Descrição do projeto dois.',   imagem: '', link: 'https://github.com/EduardoPedrosa06' },
   { nome: 'Projeto Três',   descricao: 'Descrição do projeto três.',   link: 'https://github.com/EduardoPedrosa06' },
   { nome: 'Projeto Quatro', descricao: 'Descrição do projeto quatro.', link: 'https://github.com/EduardoPedrosa06' },
   { nome: 'Projeto Cinco',  descricao: 'Descrição do projeto cinco.',  link: 'https://github.com/EduardoPedrosa06' },

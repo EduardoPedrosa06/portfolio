@@ -8,6 +8,7 @@ const helice = document.querySelector('.helice');
 const caixa = document.querySelector('.detalhes');
 const caixaNumero = document.querySelector('.detalhes__numero');
 const caixaNome = document.querySelector('.detalhes__nome');
+const caixaImagem = document.querySelector('.detalhes__imagem');
 const caixaDescricao = document.querySelector('.detalhes__descricao');
 const caixaLink = document.querySelector('.detalhes__link');
 
@@ -58,6 +59,15 @@ function selecionar(indice, card) {
   caixaNumero.textContent = `PROJETO ${String(indice + 1).padStart(2, '0')}`;
   caixaNome.textContent = projeto.nome;
   caixaDescricao.textContent = projeto.descricao;
+
+  // imagem do projeto (só aparece se o projeto tiver uma)
+  if (projeto.imagem) {
+    caixaImagem.src = `assets/projetos/${projeto.imagem}`;
+    caixaImagem.alt = `Imagem do projeto ${projeto.nome}`;
+    caixaImagem.hidden = false;
+  } else {
+    caixaImagem.hidden = true;
+  }
   caixaLink.href = projeto.link;
   caixaLink.hidden = false;
 
