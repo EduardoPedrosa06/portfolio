@@ -139,6 +139,26 @@ window.addEventListener('pointerup', () => {
 // ============================================
 
 const listaCertificados = document.querySelector('.formacao__lista');
+const destaques = document.querySelector('.formacao__destaques');
+
+// Cria um card em destaque para cada item de "formacao" (dados.js)
+formacao.forEach((item) => {
+  const card = document.createElement('article');
+  card.className = 'formacao__card';
+
+  card.innerHTML = `
+    <p class="formacao__status"></p>
+    <h3 class="formacao__curso"></h3>
+    <p class="formacao__instituicao"></p>
+    <p class="formacao__descricao"></p>
+  `;
+  card.querySelector('.formacao__status').textContent = item.status;
+  card.querySelector('.formacao__curso').textContent = item.curso;
+  card.querySelector('.formacao__instituicao').textContent = `${item.instituicao} · ${item.periodo}`;
+  card.querySelector('.formacao__descricao').textContent = item.descricao;
+
+  destaques.appendChild(card);
+});
 const modal = document.querySelector('#modal-certificado');
 const modalConteudo = document.querySelector('.modal__conteudo');
 const botaoFechar = document.querySelector('.modal__fechar');

@@ -146,7 +146,59 @@ ul { list-style: none; margin: 0; padding: 0; }
   border-bottom: 1px solid var(--grafite);
 }
 
-/* ===== FORMAÇÃO ===== */
+/* ===== FORMAÇÃO: DESTAQUE ===== */
+.formacao__destaques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.formacao__card {
+  position: relative;
+  background: var(--azul-escuro);
+  border: 1px solid var(--dourado-fosco);
+  border-left: 4px solid var(--champanhe);
+  padding: 2rem 2rem 2.2rem;
+}
+
+.formacao__status {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--champanhe);
+  color: var(--champanhe);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.formacao__curso {
+  font-size: 1.6rem;
+  margin: 0 0 0.4rem;
+}
+
+.formacao__instituicao {
+  color: var(--dourado-fosco);
+  margin: 0 0 1rem;
+}
+
+.formacao__descricao {
+  color: var(--cinza-azulado);
+  margin: 0;
+  max-width: 60ch;
+}
+
+.secao__subtitulo {
+  color: var(--dourado-fosco);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0 0 0.5rem;
+}
+
+/* ===== FORMAÇÃO: CERTIFICADOS ===== */
 .certificado {
   width: 100%;
   display: grid;
@@ -383,6 +435,12 @@ ul { list-style: none; margin: 0; padding: 0; }
   }
 
   .certificado__info { grid-row: 2; }
+
+  .formacao__destaques { grid-template-columns: 1fr; }
+
+  .formacao__card { padding: 1.5rem; }
+
+  .formacao__curso { font-size: 1.3rem; }
 
   .projetos__conteudo { grid-template-columns: 1fr; }
 

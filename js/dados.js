@@ -1,11 +1,23 @@
 // ================================================
 // DADOS DO PORTFÓLIO
-// Para adicionar ou alterar conteúdo, editar este arquivo.
+// Para adicionar ou alterar conteúdo, edite só este arquivo.
 // ================================================
 
-// ----- FORMAÇÃO & CERTIFICADOS -----
+// ----- FORMAÇÃO (aparece em destaque, no topo da seção) -----
+// status: por exemplo 'Em andamento', 'Concluído' ou 'Trancado'
+const formacao = [
+  {
+    curso: 'Graduação em [nome do curso]',
+    instituicao: 'Nome da faculdade',
+    periodo: '2024 – 2028',
+    status: 'Em andamento',
+    descricao: 'Uma ou duas frases sobre o curso ou o que você tem estudado nele.'
+  }
+];
+
+// ----- CERTIFICADOS -----
 // arquivo: nome do arquivo dentro de assets/certificados/ (.jpg, .png ou .pdf)
-//          deixar '' (vazio) se ainda não tiver certificado (ex.: curso em andamento)
+//          deixe '' (vazio) se ainda não tiver certificado (ex.: curso em andamento)
 const certificados = [
   {
     nome: 'Nome do curso',
@@ -18,12 +30,6 @@ const certificados = [
     instituicao: 'Instituição',
     ano: '2025',
     arquivo: 'curso-1.jpg'
-  },
-  {
-    nome: 'Graduação em [curso]',
-    instituicao: 'Faculdade',
-    ano: '2024 – atual',
-    arquivo: ''
   }
 ];
 
