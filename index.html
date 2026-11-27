@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Eduardo Pedrosa, desenvolvedor back-end e full stack em formação.">
+  <title>Eduardo Pedrosa — Portfólio</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== MENU ===== -->
+  <header class="cabecalho">
+    <nav class="menu">
+      <a href="#inicio" class="menu__logo">
+        <img src="assets/img/logo.png" alt="Logo de Eduardo Pedrosa">
+      </a>
+      <ul class="menu__links">
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== APRESENTAÇÃO ===== -->
+    <section id="inicio" class="apresentacao">
+      <img src="assets/img/eduardo-foto.jpg" alt="Foto de Eduardo Pedrosa" class="apresentacao__foto">
+
+      <div class="apresentacao__texto">
+        <p class="apresentacao__cargo">Back-end & Full Stack em formação</p>
+        <h1>Eduardo Pedrosa</h1>
+        <p class="apresentacao__descricao">
+          Frase sobre você: o que estuda e o que gosta de construir.
+        </p>
+        <a href="mailto:eduardopedrosamiranda@gmail.com" class="apresentacao__email">
+          eduardopedrosamiranda@gmail.com
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FORMAÇÃO ===== -->
+    <section id="formacao" class="secao">
+      <h2 class="secao__titulo">Formação & Certificados</h2>
+
+      <ul class="formacao__lista">
+        <li>
+          <button class="certificado" data-imagem="assets/certificados/curso-1.jpg">
+            <span class="certificado__nome">Nome do curso</span>
+            <span class="certificado__info">Instituição · 2025</span>
+            <span class="certificado__ver">Ver →</span>
+          </button>
+        </li>
+        <li>
+          <button class="certificado" data-imagem="assets/certificados/curso-2.jpg">
+            <span class="certificado__nome">Nome do curso</span>
+            <span class="certificado__info">Instituição · 2026</span>
+            <span class="certificado__ver">Ver →</span>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="secao">
+      <h2 class="secao__titulo">Projetos</h2>
+
+      <div class="projetos__conteudo">
+        <!-- Esquerda: a hélice (os cards são criados pelo JavaScript) -->
+        <div class="palco">
+          <div class="helice"></div>
+        </div>
+
+        <!-- Direita: a caixa de detalhes -->
+        <article class="detalhes">
+          <p class="detalhes__numero">—</p>
+          <h3 class="detalhes__nome">Selecione um projeto</h3>
+          <p class="detalhes__descricao">
+            Clique em um dos cards da hélice para ver os detalhes. Você também pode arrastar para girar.
+          </p>
+          <a class="detalhes__link" href="#" target="_blank" hidden>Ver código no GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer id="contato" class="rodape">
+    <p class="rodape__chamada">Vamos conversar?</p>
+    <a href="mailto:eduardopedrosamiranda@gmail.com" class="rodape__email">eduardopedrosamiranda@gmail.com</a>
+    <ul class="rodape__links">
+      <li><a href="https://github.com/EduardoPedrosa06" target="_blank">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a></li>
+    </ul>
+    <p class="rodape__copyright">© 2026 Eduardo Pedrosa</p>
+  </footer>
+
+  <!-- ===== JANELA DO CERTIFICADO ===== -->
+  <dialog class="modal" id="modal-certificado">
+    <button class="modal__fechar" aria-label="Fechar">✕</button>
+    <img src="" alt="Certificado" class="modal__imagem">
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
